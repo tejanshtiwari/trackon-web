@@ -12,7 +12,7 @@ const server = http.createServer(app);
 // Configure Socket.IO
 const io = new SocketIOServer(server, {
   cors: {
-    origin: '*',
+    origin: 'https://trackon-web-backend.onrender.com',
     methods: ['GET', 'POST', 'PATCH', 'DELETE'],
   },
 });
@@ -21,7 +21,7 @@ setIncidentIo(io);
 setMaintenanceIo(io);
 
 // Middleware
-app.use(cors({ origin: '*' }));
+app.use(cors({ origin: 'https://trackon-web-backend.onrender.com' }));
 app.use(express.json({ limit: '50mb' }));
 app.use(express.urlencoded({ extended: true, limit: '50mb' }));
 
