@@ -6,8 +6,7 @@
   "scripts": {
     "dev": "vite --port 5173",
     "build": "vite build",
-    "preview": "vite preview",
-    "postinstall": "chmod +x node_module/ .bin/* || true"
+    "preview": "vite preview"
   },
   "dependencies": {
     "leaflet": "^1.9.4",
