@@ -106,7 +106,7 @@ export default function Login() {
   };
 
   // Quick One-Click Login
-  const handleQuickPersona = async (personaId) => {
+  /*const handleQuickPersona = async (personaId) => {
     setLoading(true);
     setError('');
     try {
@@ -116,7 +116,7 @@ export default function Login() {
     } finally {
       setLoading(false);
     }
-  };
+  };*/
 
   return (
     <div className="min-h-screen bg-slate-950 flex flex-col justify-center py-12 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
