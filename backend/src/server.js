@@ -12,7 +12,7 @@ const server = http.createServer(app);
 // Configure Socket.IO
 const io = new SocketIOServer(server, {
   cors: {
-    origin: 'https://trackon-web-backend.onrender.com',
+    origin: 'https://trackon-web.onrender.com',
     methods: ['GET', 'POST', 'PATCH', 'DELETE'],
   },
 });
