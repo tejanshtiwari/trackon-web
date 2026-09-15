@@ -1,4 +1,4 @@
-const API_BASE = "https://trackon-web-backend.onrender.com" || '/api';
+const API_BASE = 'https://trackon-web-backend.onrender.com';
 
 export async function apiRequest(endpoint, method = 'GET', body = null) {
   const token = localStorage.getItem('TRACKON_token');
